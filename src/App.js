@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import style from './App.css';
+import style from './app.css';
+import { SimpleHooks } from './topics/simpleHooks';
+import { ImgHoverEffect } from './topics/useRefDemo';
+import ScrollViewImage from './topics/useEffect';
+import { ImgViewUseEffect } from './topics/imageScrollUseEffect';
 class App extends Component {
   constructor() {
     super();
@@ -31,7 +35,7 @@ class App extends Component {
     // console.log('photos from state:', this.state.photos);
     const { photos } = this.state;
     return <div>
-      <ul>
+      {/* <ul>
         {photos.map((item, index) => {
           return <li key={item.id}>
             <div className="cardName">
@@ -42,14 +46,14 @@ class App extends Component {
             </div>
           </li>;
         })}
-        {/* <li>
-          <div className="cardName">
-            <h4>Rahul Rawal</h4>
-            <h5>Backend Developer</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum magni nostrum nam deserunt reprehenderit exercitationem veniam</p>
-          </div>
-        </li> */}
-      </ul>
+      </ul> */}
+
+      {/* SetState */}
+      {/* <SimpleHooks /> */}
+      {/* Use Ref */}
+      {/* <ImgHoverEffect /> */}
+      {/* useEffect */}
+      <ImgViewUseEffect />
     </div>
   }
 }
